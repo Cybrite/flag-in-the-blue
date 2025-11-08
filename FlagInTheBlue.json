@@ -1,0 +1,112 @@
+[
+    {"Crab": [
+        "I represent Rust’s mascot — Ferris, the fearless one.",
+        "I walk sideways on the shore with sharp claws.",
+        "I’m a red-shelled crustacean — who am I?"
+    ]},
+    {"Anchor": [
+        "In HTML, I’m the link tag that connects one page to another.",
+        "I keep ships steady and prevent them from drifting.",
+        "I’m dropped into the sea to hold a vessel in place — who am I?"
+    ]},
+    {"Map": [
+        "I’m a key–value data structure in many programming languages.",
+        "I show locations, routes, and directions.",
+        "I help travelers find their way — who am I?"
+    ]},
+    {"Pearl": [
+        "My name inspired a programming language whose full form is Process and Experiment Automation Realtime Language.",
+        "I’m formed inside oysters from layers of nacre.",
+        "I’m a smooth, round gem of the sea — who am I?"
+    ]},
+    {"Mermaid": [
+        "I’m a text-to-diagram tool used in documentation and Markdown.",
+        "I’m half human, half fish — from myths and legends.",
+        "I’m a sea creature with a woman’s face and a fish’s tail — who am I?"
+    ]},
+    {"Whale": [
+        "I’m Docker’s mascot — carrying containers across servers.",
+        "I’m the largest animal in the ocean.",
+        "I’m a giant marine mammal — who am I?"
+    ]},
+    {"Shark": [
+        "I’m like Wireshark — sniffing through packets on a network.",
+        "I’m a fast and dangerous predator of the ocean.",
+        "I have sharp teeth and swim in the sea — who am I?"
+    ]},
+    {"Snail Case": [
+        "I’m a coding style similar to snake_case — readable and slow-paced.",
+        "I’m a shell-like spiral often found on the beach.",
+        "I’m the home carried by a slow-moving mollusk — who am I?"
+    ]},
+    {"Starfish": [
+        "I’m like a fault-tolerant system — if one node fails, I regrow.",
+        "I have five arms and live on the ocean floor.",
+        "I’m a star-shaped sea creature — who am I?"
+    ]},
+    {"Octopus": [
+        "I’m the perfect metaphor for multitasking — one brain, eight simultaneous processes.",
+        "I live deep in the ocean and can camouflage my body.",
+        "I have eight flexible arms — who am I?"
+    ]},
+    {"Turtle": [
+        "I’m the first friend of many coders — teaching logic one pixel-step at a time.",
+        "I have a shell and move slowly on land.",
+        "I’m a gentle reptile that lives both in water and on land — who am I?"
+    ]},
+    {"Crown": [
+        "I’m like root access — one symbol of absolute control over the system.",
+        "I’s worn by kings and queens as a symbol of power.",
+        "I’m a golden headpiece of royalty — who am I?"
+    ]},
+    {"Sea Crystals": [
+        "I’m fragmented data — tiny shards forming the foundation of scalable systems.",
+        "I sparkle when sunlight hits the waves.",
+        "I’m tiny, glittering fragments from the sea — who am I?"
+    ]},
+    {"Compass": [
+        "I’m like a pathfinding algorithm — always guiding code toward the right direction.",
+        "I always point toward the north.",
+        "Sailors use me to find direction — who am I?"
+    ]},
+    {"Barrel": [
+        "I’m a container for your system’s output — logs, events, or data waiting to be opened.",
+        "I’m a wooden container for wine, water, or rum.",
+        "Pirates roll me on deck — who am I?"
+    ]},
+    {"Treasure Chest": [
+        "I’m your encrypted data vault — full of digital gold and hidden keys.",
+        "Pirates used to bury me deep underground.",
+        "I hold gold, gems, and other riches — who am I?"
+    ]},
+    {"Magic Book": [
+        "I’m the developer’s grimoire — full of libraries, secrets, and forbidden scripts.",
+        "Stories say I contain spells and incantations.",
+        "Wizards read me to perform magic — who am I?"
+    ]},
+    {"Submarine": [
+        "I’m a hidden process — operating below the UI, invisible yet essential.",
+        "I travel underwater, unseen from above.",
+        "I’m a vessel that dives deep into the ocean — who am I?"
+    ]},
+    {"Energy Capsule": [
+        "I’m your system’s performance booster — the patch, cache, or hotfix that revives speed.",
+        "I give energy boosts in video games or sci-fi stories.",
+        "I’m a small glowing power-up — who am I?"
+    ]},
+    {"Ship": [
+        "I’m a deployment vessel — delivering code from dev ports to production seas.",
+        "I sail across seas carrying people and cargo.",
+        "I’m a large vessel that floats on water — who am I?"
+    ]},
+    {"Diver": [
+        "I’m like a deep debugger — plunging into memory and call stacks to hunt bugs.",
+        "I swim underwater wearing a special suit.",
+        "I’m a person who explores the sea — who am I?"
+    ]},
+    {"Bottle": [
+        "I’m the minimalist framework that helps ideas flow cleanly through APIs.",
+        "I can hold liquids or even a message inside.",
+        "I’m made of glass and used to store drinks — who am I?"
+    ]}
+]

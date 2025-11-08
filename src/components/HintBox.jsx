@@ -1,0 +1,117 @@
+import React, { useState } from "react";
+import hintButtonImg from "../assets/hintbutton.png";
+import popupBoxImg from "../assets/popupbox.png"; 
+import prevBoxImg from "../assets/prevbox.png";
+import okBoxImg from "../assets/okbox.png";
+import nextBoxImg from "../assets/nextbox.png";
+const jakartaFont = { fontFamily: '"Super Squad", sans-serif' };
+
+export default function HintBox({hints}) {
+  const [index, setIndex] = useState(0);
+  const [isOpen, setIsOpen] = useState(true);
+
+  const totalHints = hints?.length || 0;
+  
+  const prevHint = () => setIndex((prev) => (prev === 0 ? totalHints - 1 : prev - 1));
+  const nextHint = () => setIndex((prev) => (prev === totalHints - 1 ? 0 : prev + 1));
+
+  const togglePopup = () => {
+    setIsOpen((prev) => {
+      if (!prev) { 
+        setIndex(0); 
+      }
+      return !prev;
+    });
+  };
+
+  return (
+    <>
+      {isOpen && (
+        <div 
+          className="fixed inset-0 bg-opacity-50 z-40" 
+          onClick={togglePopup}
+        ></div>
+      )}
+
+      <button
+        onClick={togglePopup}
+        className="fixed top-5 right-5 flex flex-col items-center text-white font-bold z-50"
+        style={jakartaFont}
+      >
+        <img 
+          src={hintButtonImg} 
+          alt="Hint Button" 
+          className="w-32 h-auto hover:scale-105 transition-transform" 
+        />
+      </button>
+
+      {isOpen && (
+        <div
+          className="fixed bottom-[15vh]
+                     left-1/2 transform -translate-x-1/2 
+                     w-[95%] max-w-4xl bg-white/10
+                     text-white text-center p-12 md:p-16 
+                     flex flex-col items-center justify-center 
+                      z-50 rounded-4xl
+                     "
+          style={{ 
+            backgroundImage: `url(${popupBoxImg})`, 
+            backgroundSize: '100% 100%',
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center',
+            backgroundColor: 'rgba(50, 30, 50, 0.1)', 
+            ...jakartaFont 
+          }}
+        >
+          
+
+          <p className="text-yellow-400 font-bold text-xl md:text-2xl mb-4 leading-relaxed max-w-3xl">
+            HINT {index + 1} &nbsp;:
+            <span className="text-white font-medium ml-3">{hints[index]}</span>
+          </p>
+
+          <div className="flex justify-center items-center gap-8 md:gap-12 mt-6">
+            
+            <button
+              onClick={prevHint}
+              style={{ backgroundImage: `url(${prevBoxImg})`, backgroundSize: '100% 100%' }}
+              className="w-24 h-20 md:w-32 md:h-24 
+                         flex items-center justify-center 
+                         bg-contain bg-no-repeat bg-center text-amber-400 font-extrabold 
+                         text-3xl md:text-4xl hover:scale-110 transition-transform duration-200 
+                         disabled:opacity-50 disabled:cursor-not-allowed"
+              disabled={index === 0}
+            >
+              
+            </button>
+
+            <button
+              onClick={() => setIsOpen(false)}
+              style={{ backgroundImage: `url(${okBoxImg})`, backgroundSize: '100% 100%' }}
+              className="w-32 h-20 md:w-40 md:h-24 
+                         flex items-center justify-center 
+                         bg-contain bg-no-repeat bg-center text-yellow-400 font-extrabold 
+                         text-2xl md:text-3xl hover:scale-110 transition-transform duration-200"
+            >
+              
+            </button>
+
+            <button
+              onClick={nextHint}
+              style={{ backgroundImage: `url(${nextBoxImg})`, backgroundSize: '100% 100%' }}
+              className="w-24 h-20 md:w-32 md:h-24 
+                         flex items-center justify-center 
+                         bg-contain bg-no-repeat bg-center text-amber-400 font-extrabold 
+                         text-3xl md:text-4xl hover:scale-110 transition-transform duration-200 
+                         disabled:opacity-50 disabled:cursor-not-allowed"
+              disabled={index === totalHints - 1}
+            >
+              
+            </button>
+          </div>
+        </div>
+      )}
+    </>
+  );
+}
+
